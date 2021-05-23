@@ -1,6 +1,5 @@
 package com.kickstart2021C.problem1;
 
-
 import org.junit.Test;
 
 import java.io.ByteArrayInputStream;
@@ -17,8 +16,21 @@ public class SolutionTests {
 	}
 
 	@Test
-	public void readFileA() throws Exception {
+	public void sample() throws Exception {
+		String filename = "sample_ts1_input.txt";
+		System.setIn(new ByteArrayInputStream(readFile(filename)));
+		Solution.main(new String[]{});
+	}
 
+	@Test
+	public void ts1() throws Exception {
+		String filename = "ts1_input.txt";
+		System.setIn(new ByteArrayInputStream(readFile(filename)));
+		Solution.main(new String[]{});
+	}
+
+	@Test
+	public void ts2() throws Exception {
 		String filename = "ts2_input.txt";
 		System.setIn(new ByteArrayInputStream(readFile(filename)));
 		Solution.main(new String[]{});

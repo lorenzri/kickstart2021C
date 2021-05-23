@@ -9,12 +9,12 @@ class Solution {
 
     public static void main(String[] args) {
 
+        Boolean printTime = Boolean.FALSE;
+
         Instant start = Instant.now();
 
         Scanner input = new Scanner(new InputStreamReader(System.in));
-
         int t = input.nextInt();
-
         for (int i = 1; i <= t; ++i) {
             int n = input.nextInt();
             String s = input.next();
@@ -33,7 +33,9 @@ class Solution {
 
             System.out.println("Case #" + i + ": " + sb);
         }
-        Instant end = Instant.now();
-        System.out.println(Duration.between(start, end));
+        if(printTime) {
+            Instant end = Instant.now();
+            System.out.println(Duration.between(start, end));
+        }
     }
 }
