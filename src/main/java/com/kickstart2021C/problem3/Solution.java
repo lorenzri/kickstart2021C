@@ -1,4 +1,4 @@
-package com.kickstart2021B.problem3;
+package com.kickstart2021C.problem3;
 
 import java.io.InputStreamReader;
 import java.time.Duration;
